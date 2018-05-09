@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+--------------------------------- TRABALHO  01 ---------------------------------
+--------------------------------------------------------------------------------
+
+Implementar os métodos para resolução de sistemas lineares:
+- Eliminação de Gauss
+	Saída:
+	. a matriz U escalonada e o vetor c
+	. o vetor x de incógnitas
+	. o determinante da matriz A
+	
+- Fatoração LU
+	Saída:
+	. as matrizes L e U 
+	. o vetor x de incógnitas
+	. o determinante da matriz A
+	
+- Eliminação de Gauss com pivotamento parcial
+	Saída:
+	. a matriz U escalonada e o vetor c
+	. o vetor p de permutações
+	. o vetor x de incógnitas 
+	. o determinante da matriz A
+	 
+OBS: Para todas as resoluções é preciso identificar se o sistema é:
+	. Consistente e determinado
+	. Consistente e indeterminado (considere variáveis livres iguais a zero)
+	. Inconsistente
+________________________________________________________________________________
+
+Observações gerais
+- Os scripts devem conter uma variável que receba o nome dos arquivos de
+entrada no módulo principal tanto para a matriz A como para o vetor b.
+	Exemplo:
+	    matrixA_fileName = 'NOME_DO_ARQUIVO_DA_MATRIZ';
+	    vectorb_fileName = 'NOME_DO_ARQUIVO_DO_VETOR';
+
+- O programa também deve receber uma variável para indicar qual o método
+deve ser usado.
+	Exemplo:
+	    method = m;
+	    onde m = {0 - Gauss; 1 - LU; 2 - Gauss com pivotamento parcial}
+	
+- Será levado em consideração na nota a organização do código.
+	. O código deve está comentado, identado e modularizado.
+________________________________________________________________________________
+
+Garanta seu 10 e implemente também:
+	. Método de Gauss Jordan
+	. Resolução de um sistema para vários vetores colunas da matriz B
+	  retornando uma matriz X contendo as respostas relativas
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
